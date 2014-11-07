@@ -18,7 +18,8 @@ alias l='ls -CF'
 alias cd..='cd ..'
 alias cd.='cd ..'
 
-export PS1="\[\e]0;\w\a\]\n\[\e[36m\]\u@\h \[\e[1;30m\]\w\[\e[0m\]\n\$"
+#export PS1="\[\e]0;\w\a\]\n\[\e[36m\]\u@\h \[\e[1;30m\]\w\[\e[0m\]\n\$"
+export PS1="\[\e[36m\]\u@\h \[\e[1;30m\]\w\[\e[0m\]\n\$"
 
 
 #  systemy things ...
