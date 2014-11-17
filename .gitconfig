@@ -1,0 +1,7 @@
+[user]
+	email = tyler.polen@gmail.com
+	name = Tyler Polen
+[core]
+	editor = vim
+[push]
+	default = current
