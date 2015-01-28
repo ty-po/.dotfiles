@@ -20,3 +20,5 @@ Press `CTRL-a c` to start a console in the current pane
 Vim
 ---
 `:w !sudo tee %`  to force sudo write
+
+launching with `sudo -E vim` and typing visual enters with sudo privileges and user vimrc
