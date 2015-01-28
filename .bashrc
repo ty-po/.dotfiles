@@ -10,13 +10,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -alF'
-alias la='ls -a'
-alias l='ls -CF'
-
-alias cd..='cd ..'
-alias cd.='cd ..'
 
 #export PS1="\[\e]0;\w\a\]\n\[\e[36m\]\u@\h \[\e[1;30m\]\w\[\e[0m\]\n\$"
 export PS1="\[\e[36m\]\u@\h \[\e[1;30m\]\w\[\e[0m\]\n\$"
@@ -26,11 +19,7 @@ export PS1="\[\e[36m\]\u@\h \[\e[1;30m\]\w\[\e[0m\]\n\$"
 alias hgrep='grep \!* /etc/hosts | more'
 alias psgrep='ps -eaf | grep \!* | grep -v grep'
 
-alias vi='vim'
 
-#Git Aliases
-alias gits='git status'
-alias gitca="git commit -a"
 
 # add to path
 export PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/local/etc"
