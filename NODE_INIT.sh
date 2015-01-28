@@ -10,5 +10,6 @@ curl -sL https://deb.nodesource.com/setup | bash -
 sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 
+#git key
 ssh-keygen -t rsa -C "tyler.polen@gmail.com"
 
