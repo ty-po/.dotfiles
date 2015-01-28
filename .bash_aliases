@@ -1,6 +1,11 @@
+alias ll='ls -alF'
+alias la='ls -a'
+alias l='ls -CF'
+
+alias cd..='cd ..'
+alias cd.='cd ..'
 alias vi='vim'
 
-alias cd.='cd ..'
-alias cd..='cd ..'
-
+#Git Aliases
 alias gits='git status'
+alias gitca="git commit -a"
