@@ -30,4 +30,5 @@ CLI Productivity
 - surfraw
 - vifm
 - gcalcli
+- ncdu
 - alpine/mutt?
