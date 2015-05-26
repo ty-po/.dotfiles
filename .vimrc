@@ -2,7 +2,7 @@
 
 set number
 
-set cindent
+"set cindent
 set smartindent
 set autoindent
 
@@ -46,6 +46,10 @@ autocmd filetype hpp setlocal expandtab
 
 autocmd filetype hs setlocal expandtab
 autocmd filetype elm setlocal expandtab
+
+if has("autocmd")
+  filetype plugin indent on
+endif
 
 "notification for col 80  
 "set colorcolumn=80
