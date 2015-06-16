@@ -4,16 +4,16 @@
 sudo apt-get update
 sudo apt-get install git vim tmux w3m vifm
 
+cd ~
+
 git clone https://github.com/ty-po/.dotfiles.git
 
-cd .dotfiles
-
-cp -r .vim            ~/
-cp    .bash_aliases   ~/
-#cp    .bashrc.default ~/
-cp    .dircolors      ~/
-cp    .gitconfig      ~/
-cp    .gitignore      ~/
-cp    .tmux.conf      ~/
-cp    .vimrc          ~/
+cp -r ~/.dotfiles/.vim            ~/
+cp    ~/.dotfiles/.bash_aliases   ~/
+#cp    ~/.dotfiles/.bashrc.default ~/
+cp    ~/.dotfiles/.dircolors      ~/
+cp    ~/.dotfiles/.gitconfig      ~/
+#cp    ~/.dotfiles/.gitignore      ~/
+cp    ~/.dotfiles/.tmux.conf      ~/
+cp    ~/.dotfiles/.vimrc          ~/
 
