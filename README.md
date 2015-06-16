@@ -1,7 +1,15 @@
-# Stuff to Remember
+# Config Repository
+
+Debian derivative setup repository + solarized.
+
+
+Setup
+-----
+
+
 
 Tmux
------------------
+----
 [Tmux Cheatsheet](https://gist.github.com/afair/3489752#file-tmux-cheat)
 
 where ^b is reassigned to Ctrl-a
