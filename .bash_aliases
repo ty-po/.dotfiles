@@ -12,8 +12,16 @@ alias untar='tar -zxvf'
 alias df='df -h'
 alias du='du -h'
 
-#Git Aliases
+# Git Aliases
 alias gits='git status'
-alias gitca="git commit -a"
+alias gitca='git commit -a'
+
+# Tmux Aliases
+alias tmn='tmux'                  #new
+alias tm='tmux list-sessions'     #list
+alias tmr='tmux attach'           #resume
+alias tma='tmux attach -t'        #attach
+alias tmk='tmux kill-session -t'  #kill
+alias tmka='tmux kill-session'    #kill all
 
 ###Instance Specific###
