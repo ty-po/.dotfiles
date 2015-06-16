@@ -8,7 +8,11 @@ set autoindent
 
 set expandtab
 
-syntax on
+
+syntax enable
+set background=dark
+set term=xterm-256color
+colorscheme solarized
 
 
 
@@ -55,7 +59,7 @@ endif
 "set colorcolumn=80
 "highlight ColorColumn ctermbg=darkgrey
 "method 2
-highlight OverLength ctermbg=lightgrey ctermfg=black guibg=#592929
+highlight OverLength ctermbg=lightgrey ctermfg=black guibg=#fdf6e3
 match OverLength /\%80v.\+/
 
 
