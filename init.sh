@@ -8,12 +8,13 @@ cd ~
 
 git clone https://github.com/ty-po/.dotfiles.git
 
-cp -r ~/.dotfiles/.vim            ~/
-cp    ~/.dotfiles/.bash_aliases   ~/
-#cp    ~/.dotfiles/.bashrc.default ~/
-cp    ~/.dotfiles/.dircolors      ~/
-cp    ~/.dotfiles/.gitconfig      ~/
-#cp    ~/.dotfiles/.gitignore      ~/
-cp    ~/.dotfiles/.tmux.conf      ~/
-cp    ~/.dotfiles/.vimrc          ~/
+rm -rf ~/.vim
+ln -sf    ~/.dotfiles/.vim            ~/
+ln -sf    ~/.dotfiles/.bash_aliases   ~/
+
+ln -sf    ~/.dotfiles/.dircolors      ~/
+ln -sf    ~/.dotfiles/.gitconfig      ~/
+
+ln -sf    ~/.dotfiles/.tmux.conf      ~/
+ln -sf    ~/.dotfiles/.vimrc          ~/
 
