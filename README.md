@@ -5,7 +5,7 @@ Debian derivative setup repository + solarized.
 
 Setup
 -----
-
+`wget -O - https://goo.gl/Z7hZgt | sh`
 
 
 Tmux
