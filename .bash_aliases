@@ -12,6 +12,9 @@ alias untar='tar -zxvf'
 alias df='df -h'
 alias du='du -h'
 
+# Mosh Alias
+alias msh='mosh' #(like ssh)
+
 # Git Aliases
 alias gits='git status'
 alias gitca='git commit -a'
