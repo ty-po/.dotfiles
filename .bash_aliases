@@ -28,3 +28,6 @@ alias tmk='tmux kill-session -t'  #kill
 alias tmka='tmux kill-session'    #kill all
 
 ###Instance Specific###
+alias nix-config='sudo vi /etc/nixos/configuration.nix'
+alias nix-search='nix-env -qa | grep'
+alias nix-upgrade='sudo nixos-rebuild switch'
