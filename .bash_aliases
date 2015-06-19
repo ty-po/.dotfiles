@@ -22,7 +22,7 @@ alias gitca='git commit -a'
 # Tmux Aliases
 alias tmn='tmux'                  #new
 alias tm='tmux list-sessions'     #list
-alias tmr='tmux attach'           #resume
+alias tmr='tmux attach -d'        #resume (and detach)
 alias tma='tmux attach -t'        #attach
 alias tmk='tmux kill-session -t'  #kill
 alias tmka='tmux kill-session'    #kill all
