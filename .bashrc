@@ -1,5 +1,5 @@
 # enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
+if [ -x /run/current-system/sw/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
     #alias dir='dir --color=auto'
@@ -12,7 +12,7 @@ fi
 
 
 #export PS1="\[\e]0;\w\a\]\n\[\e[36m\]\u@\h \[\e[1;30m\]\w\[\e[0m\]\n\$"
-export PS1="\[\e[36m\]\u@\h \[\e[1;30m\]\w\[\e[0m\]\n\$"
+export PS1="\[\e[0;32m\]\u@\h \[\e[1;33m\]\w\[\e[1;32m\]\n\$ "
 
 
 #  systemy things ...

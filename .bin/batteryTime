@@ -1,0 +1,12 @@
+#!/run/current-system/sw/bin/bash
+TIME=$(upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep 'time to empty'| xargs | cut -f2 -d ':')
+
+OUT=" |"
+OUT+=$TIME
+
+if [ ! -z "$TIME" ]
+  then
+    echo "$OUT"
+fi
+
+

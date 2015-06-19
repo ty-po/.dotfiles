@@ -1,6 +1,6 @@
 # Config Repository
 
-Debian derivative setup repository + solarized.
+Nixos Laptop setup repository + solarized.
 
 
 Setup
