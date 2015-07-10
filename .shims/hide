@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#Terrible hide script
+
+for var in "$@"
+do
+  if [[ $var == .* ]]
+  then
+    mv $var ${var:1}
+  else
+    mv $var .$var
+  fi
+done
