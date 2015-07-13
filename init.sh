@@ -12,8 +12,12 @@ fi
 
 rm -rf ~/.vim
 rm -rf ~/.shims
+rm -rf ~/.i3
 ln -sf    ~/.dotfiles/.vim            ~/
 ln -sf    ~/.dotfiles/.shims          ~/
+ln -sf    ~/.dotfiles/.i3             ~/
+
+ln -sf    ~/.dotfiles/.i3status.conf  ~/
 
 ln -sf    ~/.dotfiles/.bash_aliases   ~/
 

@@ -14,8 +14,8 @@
 
 #exec --no-startup-id feh --bg-fill /home/typo/.i3/gargantua.png
 
-exec --no-startup-id nitrogen --set-zoom-fill /home/typo/.i3/gargantua.png
-exec --no-startup-id monitor-hotplug.sh
+#exec --no-startup-id nitrogen --set-zoom-fill /home/typo/.i3/gargantua.png
+#exec --no-startup-id monitor-hotplug.sh
 exec --no-startup-id redshift -l 37.38:-122.11
 
 ###Default Config###
@@ -52,6 +52,12 @@ bindsym $mod+p exec dmenu_run
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -- -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+
 
 # change focus
 bindsym $mod+j focus left
@@ -163,19 +169,54 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-client.focused          #3F8AC2 #096BAA #00BAA7 #00DA8E
-client.focused_inactive #333333 #5F676A #ffffff #484e50
-client.unfocused        #333333 #424242 #888888 #292d2e
-client.urgent           #C10004 #900000 #ffffff #900000
+# clientclass 			      border  backgr. text 	  indicator
+client.focused 			      $cyan	  $cyan	  $baseB3 $blue
+client.focused_inactive		$blue	  $blue	  $baseB2 $violet
+client.unfocused  		    $baseA2 $baseA2 $baseB1 $baseA1
+client.urgent 	 		      $yellow $yellow $baseB3 $orange
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-
 bar {
         status_command i3status
         tray_output LVDS
         colors{
-          background #232323
-          statusline #DCDCDC
+          background $baseA2
+          statusline $baseB0
+          separator $baseB1
+
+          focused_workspace 		$cyan	  $cyan	  $baseB3 $blue
+          active_workspace		  $blue	  $blue	  $baseB2 $violet
+          inactive_workspace  	$baseA2 $baseA2 $baseB1 $baseA1
+          urgent_workspace 	 		$yellow $yellow $baseB3 $orange
+
         }
 }
+
+
+##### solarized theme for i3 by lasers #####
+
+# $i3-theme-window
+# solarized accents
+set $yellow	#b58900
+set $orange	#cb4b16
+set $red	#dc322f
+set $magenta	#d33682
+set $violet	#6c71c4
+set $blue	#268bd2
+set $cyan	#2aa198
+set $green	#859900
+
+# solarized dark
+set $baseA3 #002b36
+set $baseA2 #073642
+set $baseA1 #586e75
+set $baseA0 #657b83
+set $baseB0 #839496
+set $baseB1 #93a1a1
+set $baseB2 #eee8d5
+set $baseB3 #fdf6e3
+set $custom #1c5766
+
+# $i3-background
+#exec_always --no-startup-id xsetroot -solid '$baseA3'
