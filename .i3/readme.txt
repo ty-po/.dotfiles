@@ -10,4 +10,10 @@ lxappearance and paper theme for gtk themeing
 
 #Setup
 
-sudo
+run `i3init.sh`
+
+change xfce4-terminal settings to hide menubar, use droid sans mono and solarized dark
+
+use lxappearance to change system font to droid sans, and use paper for gtk/icon themes
+
+Change chrome fonts to use droid
