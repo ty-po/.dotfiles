@@ -12,10 +12,8 @@
 
 ###Startup###
 
-#exec --no-startup-id feh --bg-fill /home/typo/.i3/gargantua.png
-
-#exec --no-startup-id nitrogen --set-zoom-fill /home/typo/.i3/gargantua.png
-#exec --no-startup-id monitor-hotplug.sh
+exec --no-startup-id nitrogen --set-zoom-fill /home/typo/.i3/hubble.jpg
+exec --no-startup-id monitor-hotplug.sh
 exec --no-startup-id redshift -l 37.38:-122.11
 
 ###Default Config###
@@ -171,7 +169,7 @@ bindsym $mod+r mode "resize"
 
 # clientclass 			      border  backgr. text 	  indicator
 client.focused 			      $cyan	  $cyan	  $baseB3 $blue
-client.focused_inactive		$blue	  $blue	  $baseB2 $violet
+client.focused_inactive		$baseA1 $baseA1	$baseB2 $violet
 client.unfocused  		    $baseA2 $baseA2 $baseB1 $baseA1
 client.urgent 	 		      $yellow $yellow $baseB3 $orange
 
@@ -186,7 +184,7 @@ bar {
           separator $baseB1
 
           focused_workspace 		$cyan	  $cyan	  $baseB3 $blue
-          active_workspace		  $blue	  $blue	  $baseB2 $violet
+          active_workspace		  $baseA1	$baseA1	$baseB2 $violet
           inactive_workspace  	$baseA2 $baseA2 $baseB1 $baseA1
           urgent_workspace 	 		$yellow $yellow $baseB3 $orange
 
