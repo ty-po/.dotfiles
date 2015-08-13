@@ -41,7 +41,7 @@ bindsym $mod+Return exec xfce4-terminal
 
 # start web browser
 bindsym $mod+backslash exec --no-startup-id google-chrome
-
+for_window [class="Google-chrome"] border 1pixel 
 # kill focused window
 bindsym $mod+Shift+q kill
 
