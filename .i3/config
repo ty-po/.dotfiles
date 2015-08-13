@@ -60,7 +60,7 @@ bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 # Application Settings
 for_window [class="Google-chrome"] border 1pixel 
 for_window [class="Lxappearance"] floating enable
-
+for_window [title="File Operation Progress"] floating enable
 
 # change focus
 bindsym $mod+j focus left
