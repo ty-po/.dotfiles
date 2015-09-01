@@ -7,6 +7,8 @@ alias cd..='cd ..'
 alias cd.='cd ..'
 alias vi='vim'
 
+alias less='less -R'
+
 alias untar='tar -zxvf'
 
 alias df='df -h'
