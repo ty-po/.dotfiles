@@ -29,4 +29,6 @@ alias tma='tmux attach -t'        #attach
 alias tmk='tmux kill-session -t'  #kill
 alias tmka='tmux kill-session'    #kill all
 
+alias g="grep -rnw '.' -e" 
+
 ###Instance Specific###
