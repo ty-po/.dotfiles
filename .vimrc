@@ -11,7 +11,7 @@ set expandtab
 
 syntax enable
 set background=dark
-set term=xterm-256color
+"set term=xterm-256color
 colorscheme solarized
 
 
