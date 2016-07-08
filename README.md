@@ -3,6 +3,11 @@
 Debian derivative setup repository + solarized.
 
 
+TODO
+---
+rework for git submodule
+
+
 Setup
 -----
 `wget -O - https://goo.gl/9d5dRv | sh`
