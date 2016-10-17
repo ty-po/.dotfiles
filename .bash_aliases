@@ -31,4 +31,8 @@ alias tmka='tmux kill-session'    #kill all
 
 alias g="grep -rnw '.' -e" 
 
+alias weather="wget -qO - http://wttr.in/boulder | head -n17 |tail -n10"
+
+alias c="gcalcli"
+
 ###Instance Specific###
