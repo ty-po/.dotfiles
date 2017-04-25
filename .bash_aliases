@@ -22,7 +22,7 @@ alias gits='git status'
 alias gitca='git commit -a'
 
 # Tmux Aliases
-alias tmn='tmux'                  #new
+alias tmux="TERM=screen-256color-bce tmux" #new
 alias tm='tmux list-sessions'     #list
 alias tmr='tmux attach -d'        #resume (and detach)
 alias tma='tmux attach -t'        #attach
