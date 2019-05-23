@@ -2,7 +2,7 @@
 # for debian derivatives
 
 sudo apt-get update
-sudo apt-get install -y git vim tmux w3m vifm
+sudo apt-get install -y git vim tmux w3m vifm mosh
 
 cd ~
 
