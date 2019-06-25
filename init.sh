@@ -2,7 +2,7 @@
 # for debian derivatives
 
 sudo apt-get update
-sudo apt-get install -y git vim tmux w3m vifm
+sudo apt-get install -y git vim tmux w3m vifm mosh nginx
 
 cd ~
 
@@ -22,3 +22,10 @@ ln -sf    ~/.dotfiles/.gitconfig      ~/
 
 ln -sf    ~/.dotfiles/.tmux.conf      ~/
 ln -sf    ~/.dotfiles/.vimrc          ~/
+
+
+mv        ~/.bashrc                   ~/.bashrc.backup
+ln -sf    ~/.dotfiles/.bashrc.default ~/.bashrc
+
+touch     ~/.dotfiles/nginx
+sudo ln -sf ~/.dotfiles/nginx         /etc/nginx/sites-enabled/default

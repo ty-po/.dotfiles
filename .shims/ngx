@@ -1,0 +1,37 @@
+#!/usr/bin/env ruby
+
+conf_file = "~/.dotfiles/nginx"
+
+case ARGV[0]
+when "clear" #todo: addable routes
+  puts `cp #{conf_file} #{conf_file}.backup`
+  puts `echo > #{conf_file}`
+  puts `ngx restart`
+when "port"
+  puts `
+echo "server {
+  listen  80;
+  server_name #{`hostname`.strip}.ty-po.com;
+
+  location / {
+    proxy_pass http://localhost:#{ARGV[1]};
+  }
+}" > #{conf_file}`
+  puts `ngx restart`
+when "dir"
+  puts `
+echo "server {
+  listen 80;
+  server_name #{`hostname`.strip}.ty-po.com;
+
+  root #{`realpath #{ARGV[1]}`.strip};
+  index index.html;
+
+  location / {
+    try_files \\$uri \\$uri/ =404;
+  }
+}" > #{conf_file}`
+  puts `ngx restart`
+else
+  puts `sudo /etc/init.d/nginx #{ARGV[0]}`
+end
