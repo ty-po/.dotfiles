@@ -34,7 +34,7 @@ alias g="grep -rnw '.' -e"
 alias weather="wget -qO - http://wttr.in/newyorkcity | head -n17 |tail -n10"
 
 alias c="gcalcli"
-alias gcal="c calm"
+alias gcal="c calw -w 16"
 
 alias gg="googler"
 ###Instance Specific###
