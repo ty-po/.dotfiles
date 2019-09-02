@@ -62,7 +62,7 @@ alias psgrep='ps -eaf | grep \!* | grep -v grep'
 
 
 # add to path
-export PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/local/etc"
+export PATH="$PATH:/usr/local/bin:/usr/local/sbin:/usr/local/etc:~/.local/bin"
 export MANPATH="$MANPATH:/usr/local/man"
 
 # Alias definitions.

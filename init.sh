@@ -2,7 +2,11 @@
 # for debian derivatives
 
 sudo apt-get update
-sudo apt-get install -y git vim tmux w3m w3m-img vifm mosh nginx gcalcli
+sudo apt-get install -y git vim tmux w3m w3m-img vifm mosh nginx python-pip googler
+
+googler -u
+
+pip install gcalcli
 
 cd ~
 
