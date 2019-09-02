@@ -88,3 +88,5 @@ fi
 if [ -d ~/.shims ]; then
   export PATH="~/.shims:$PATH"
 fi
+
+export BROWSER=w3m
