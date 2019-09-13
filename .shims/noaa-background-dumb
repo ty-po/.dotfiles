@@ -1,0 +1,13 @@
+#!/bin/bash
+
+mkdir -p ~/.noaa-background
+
+cd ~/.noaa-background
+
+wget https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/taw/GEOCOLOR/1800x1080.jpg
+
+wget https://cdn.star.nesdis.noaa.gov/GOES16/ABI/SECTOR/eus/GEOCOLOR/1000x1000.jpg
+
+nitrogen --force-setter=xinerama --head=1 --set-zoom-fill ~/.noaa-background/1800x1080.jpg
+
+nitrogen --force-setter=xinerama --head=0 --set-zoom-fill ~/.noaa-background/1000x1000.jpg
