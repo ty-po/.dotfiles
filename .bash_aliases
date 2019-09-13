@@ -38,3 +38,5 @@ alias gcal="c calw -w 16"
 
 alias gg="googler"
 ###Instance Specific###
+
+alias windows="sudo grub-reboot 1; systemctl reboot"

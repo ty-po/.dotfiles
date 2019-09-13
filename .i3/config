@@ -13,9 +13,17 @@
 ###Startup###
 
 exec --no-startup-id xautolock -detectsleep -locker "i3lock -c 002b36 -d -e" -time 5
-exec --no-startup-id nitrogen --set-zoom-fill /home/typo/.i3/hubble.jpg
+exec --no-startup-id nitrogen --set-zoom-fill /home/typo/.i3/bg.jpg
 exec --no-startup-id monitor-hotplug.sh
-exec --no-startup-id redshift -l 37.38:-122.11
+exec --no-startup-id redshift -l 40.71:-74.00
+exec --no-startup-id unclutter -keystroke -idle 1
+
+
+###Gaps### 
+## requires i3-gaps
+#gaps inner 10
+#gaps outer 10
+#for_window [class="^.*"] border pixel 1
 
 ###Default Config###
 
