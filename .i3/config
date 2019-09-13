@@ -18,7 +18,7 @@ exec --no-startup-id monitor-hotplug.sh
 exec --no-startup-id redshift -l 40.71:-74.00
 exec --no-startup-id unclutter -keystroke -idle 1
 exec --no-startup-id nvidia-settings --load-config-only
-exec --no-startup-id compton -b
+exec --no-startup-id compton -b --config ~/.compton.conf
 
 
 ###Gaps### 
