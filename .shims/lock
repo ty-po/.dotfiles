@@ -1,0 +1,9 @@
+#!/bin/bash
+
+i3-msg "workspace locked"
+i3-msg "workspace i3"
+
+i3lock -c 002b36 -d -e -n
+
+i3-msg "workspace 1"
+i3-msg "workspace 2"

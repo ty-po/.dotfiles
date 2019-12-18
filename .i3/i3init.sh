@@ -13,4 +13,4 @@ ln -sf    ~/.dotfiles/.i3             ~/
 
 ln -sf    ~/.dotfiles/.i3status.conf  ~/
 
-ln -sf    ~/.dotfiles/.i3/compton.conf  ~/.compton.conf
+ln -sf    ~/.dotfiles/.i3/.compton.conf  ~/
