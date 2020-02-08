@@ -10,10 +10,12 @@ RUN apt-get update && apt-get install -y \
     mosh \
     nginx \
     python-pip \
-    googler
+    googler \
+    sudo
 
 RUN adduser --disabled-password --gecos "" user
 RUN usermod -aG sudo user
+RUN echo 'user:password' | chpasswd
 COPY ./authorized_keys /home/user/.ssh/authorized_keys
 
 WORKDIR /home/user
@@ -28,7 +30,7 @@ RUN ln -sf    /home/user/.dotfiles/.tmux.conf      /home/user/
 RUN ln -sf    /home/user/.dotfiles/.vimrc          /home/user/
 RUN ln -sf    /home/user/.dotfiles/.bashrc.default          /home/user/.bashrc
 
-RUN chown -R user /home/user/
+RUN chown -R user /home/user
 
 EXPOSE 22
-ENTRYPOINT service ssh restart && bash
+ENTRYPOINT service ssh restart && trap : TERM INT ; tail -f /dev/null & wait
