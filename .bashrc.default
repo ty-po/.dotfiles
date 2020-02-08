@@ -91,4 +91,14 @@ fi
 
 export BROWSER=w3m
 
-export DOCKER_HOST=tcp://localhost:2375
+#FOR Windows
+#export DOCKER_HOST=tcp://localhost:2375
+
+#FOR GCP Container Optimized OS
+#alias docker-compose='docker run --rm \
+#    -v /var/run/docker.sock:/var/run/docker.sock \
+#    -v "$PWD:$PWD" \
+#    -w="$PWD" \
+#    docker/compose:1.24.0'
+
+git config credential.helper store
