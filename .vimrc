@@ -59,7 +59,7 @@ endif
 "set colorcolumn=80
 "highlight ColorColumn ctermbg=darkgrey
 "method 2
-highlight OverLength ctermbg=lightgrey ctermfg=black guibg=#fdf6e3
+highlight OverLength ctermbg=darkgrey ctermfg=black guibg=#fdf6e3
 match OverLength /\%81v.\+/
 
 

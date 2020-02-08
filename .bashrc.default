@@ -90,3 +90,5 @@ if [ -d ~/.shims ]; then
 fi
 
 export BROWSER=w3m
+
+export DOCKER_HOST=tcp://localhost:2375
