@@ -91,10 +91,10 @@ fi
 
 export BROWSER=w3m
 
-#FOR Windows
+##FOR Windows
 #export DOCKER_HOST=tcp://localhost:2375
 
-#FOR GCP Container Optimized OS
+##FOR GCP Container Optimized OS
 #alias docker-compose='docker run --rm \
 #    -v /var/run/docker.sock:/var/run/docker.sock \
 #    -v "$PWD:$PWD" \
