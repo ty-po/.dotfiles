@@ -31,6 +31,7 @@ ln -sf    ~/.dotfiles/.gitconfig      ~/
 
 mv        ~/.bashrc                   ~/.bashrc.backup
 ln -sf    ~/.dotfiles/.bashrc.default ~/.bashrc
+ln -sf    ~/.dotfiles/.zshrc          ~/
 
 touch     ~/.dotfiles/nginx
 sudo ln -sf ~/.dotfiles/nginx         /etc/nginx/sites-enabled/default
