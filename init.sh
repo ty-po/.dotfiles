@@ -27,6 +27,7 @@ ln -sf    ~/.dotfiles/.gitconfig      ~/
 ln -sf    ~/.dotfiles/.tmux.conf      ~/
 ln -sf    ~/.dotfiles/.vimrc          ~/
 
+ln -sf    ~/.dotfiles/.gitconfig      ~/
 
 mv        ~/.bashrc                   ~/.bashrc.backup
 ln -sf    ~/.dotfiles/.bashrc.default ~/.bashrc
