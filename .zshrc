@@ -11,3 +11,7 @@ zstyle ':vcs_info:git:*' formats '%F{black}% %b'
 setopt PROMPT_SUBST
 PROMPT='%F{yellow}%n%F{grey}% @%F{yellow}% %m %F{grey}% ${PWD/#$HOME/~} $ '
 RPROMPT=\$vcs_info_msg_0_
+
+export CLICOLOR=1
+
+#[[ /usr/local/bin/kubectl ]] && source <(kubectl completion zsh) #
