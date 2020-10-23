@@ -58,7 +58,7 @@
 
   // if `true` (without backticks and without quotes), selected text will automatically be copied to the clipboard
   //copyOnSelect: true,
-  //quickEdit: true,
+  quickEdit: true,
 
   // a list of plugins to fetch and install from npm
   // format: [@org/]project[#version]

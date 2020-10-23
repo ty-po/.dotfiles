@@ -29,6 +29,22 @@ alias tma='tmux attach -t'        #attach
 alias tmk='tmux kill-session -t'  #kill
 alias tmka='tmux kill-session'    #kill all
 
+# Kubernetes Aliases
+alias k="kubectl"
+alias kl="kubectl logs"
+alias kgp="kubectl get pods"
+alias kdp="kubectl describe pods"
+alias kgs="kubectl get services"
+
+alias kdall="kubectl delete all --all"
+alias ka="k apply -f"
+
+alias sk="skaffold"
+
+alias mk="minikube"
+alias mks="mk service"
+
+# grep find in files for current folder
 alias g="grep -rnw '.' -e" 
 
 alias weather="wget -qO - http://wttr.in/New%20York,%20United%20States | head -n27 |tail -n26"

@@ -66,3 +66,6 @@ match OverLength /\%81v.\+/
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2 
+
+" The directory does not get auto-created. Must be created beforehand.
+set directory=~/.vim/swapfiles//

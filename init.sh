@@ -35,5 +35,7 @@ ln -sf    ~/.dotfiles/.bashrc.default ~/.bashrc
 ln -sf    ~/.dotfiles/.zshrc          ~/
 ln -sf    ~/.dotfiles/.hyper.js       ~/
 
+mkdir ~/.vim/swapfiles/
+
 touch     ~/.dotfiles/nginx
 sudo ln -sf ~/.dotfiles/nginx         /etc/nginx/sites-enabled/default
